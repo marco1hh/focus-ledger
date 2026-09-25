@@ -16,9 +16,7 @@
     .price { font-size:42px; margin:8px 0; }
     .card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:20px; margin:18px 0; }
     ul { padding-left:1.1em; line-height:1.6; }
-    label { display:block; font-family:system-ui,sans-serif; font-size:14px; margin:12px 0 4px; }
-    input, textarea { width:100%; padding:10px 12px; border:1px solid #d1d5db; border-radius:8px; font-size:16px; }
-    button { display:inline-block; background:var(--teal); color:#fff; border:0; border-radius:10px; padding:14px 18px; font-size:16px; font-family:system-ui,sans-serif; cursor:pointer; }
+    button, .btn { display:inline-block; background:var(--teal); color:#fff; border:0; border-radius:10px; padding:14px 18px; font-size:16px; font-family:system-ui,sans-serif; cursor:pointer; text-decoration:none; }
     .hint { color:var(--muted); font-family:system-ui,sans-serif; font-size:14px; line-height:1.5; }
     footer { color:var(--muted); font-family:system-ui,sans-serif; font-size:13px; }
   </style>
@@ -36,25 +34,11 @@
       <ul>
         <li>Excel-Datei auf Deutsch</li>
         <li>1-Seiten-PDF: so öffnest du das am Handy</li>
-        <li>Datei nach Zahlung per E-Mail</li>
+        <li>Sofort per E-Mail nach Zahlung</li>
       </ul>
     </div>
-    <div class="card">
-      <h2>Bestellen</h2>
-      <p class="hint">Schreib deine E-Mail. Du bekommst die Zahlungsinfos zurück, danach die Datei.</p>
-      <form name="bestellung" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="bestellung">
-        <p style="display:none"><label>Nicht ausfüllen <input name="bot-field"></label></p>
-        <label for="name">Name</label>
-        <input id="name" name="name" required>
-        <label for="email">E-Mail</label>
-        <input id="email" name="email" type="email" required>
-        <label for="note">Notiz (optional)</label>
-        <textarea id="note" name="note" rows="3"></textarea>
-        <p><button type="submit">Bestellen — 5,99 €</button></p>
-      </form>
-      <p class="hint">Oder direkt: <a href="mailto:ordnungmarco1@gmail.com?subject=Focus%20Ledger%205,99">ordnungmarco1@gmail.com</a></p>
-    </div>
+    <p><a class="btn" href="https://payhip.com/b/id5hk">Kaufen — 5,99 €</a></p>
+    <p class="hint">Zahlung und Download über Payhip. Kein Abo.</p>
     <p class="hint">Keine Steuerberatung. Keine App im Store. Nur für den eigenen Gebrauch.</p>
     <footer>Focus Ledger · digitaler Download</footer>
   </main>
